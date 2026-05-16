@@ -161,12 +161,25 @@ function App() {
     }}>
 
       {/* Header */}
-      <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-        <h1 style={{ fontSize: '32px', fontWeight: '800', letterSpacing: '-1px', margin: 0, color: '#0f172a' }}>
-          SmartCite <span style={{ color: '#3b82f6' }}>AI</span>
-        </h1>
-        <p style={{ fontSize: '15px', color: '#64748b', marginTop: '6px' }}>Intelligent Citation Generator - Instant Academic Referencing</p>
-      </div>
+<div style={{ textAlign: 'center', marginBottom: '32px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  {/* Logo Addition */}
+  <img 
+    src="/favicon.ico" 
+    alt="SmartCite AI Logo" 
+    style={{ 
+      width: '64px', 
+      height: '64px', 
+      marginBottom: '16px',
+      borderRadius: '14px', /* Optional: gives your logo smooth, rounded corners */
+      boxShadow: '0 4px 12px rgba(59, 130, 246, 0.15)' /* Optional: subtle glow effect */
+    }} 
+  />
+  
+  <h1 style={{ fontSize: '32px', fontWeight: '800', letterSpacing: '-1px', margin: 0, color: '#0f172a' }}>
+    SmartCite <span style={{ color: '#3b82f6' }}>AI</span>
+  </h1>
+  <p style={{ fontSize: '15px', color: '#64748b', marginTop: '6px' }}>Intelligent Citation Generator - Instant Academic Referencing</p>
+</div>
 
       {/* Input Area */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', position: 'relative' }}>
